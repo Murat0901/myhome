@@ -1,15 +1,15 @@
 import Layout from "../components/Layout";
 
-function About() {
+function Contact() {
   return (
     <Layout>
-      <section id="about" className="about">
+      <section id="contact" className="contact">
         <div className="">
-          <h1>About Me</h1>
+          <h1>Contact Me</h1>
         </div>
       </section>
     </Layout>
   );
 }
 
-export default About;
+export default Contact;
