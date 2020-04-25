@@ -1,9 +1,10 @@
 import Head from 'next/head'
+import Layout from '../components/Layout'
 
 export default function Home() {
   return (
     <div className="container">
-      <p>Hello Next</p>
+      <Layout/>
     </div>
   )
 }
