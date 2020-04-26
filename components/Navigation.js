@@ -12,10 +12,10 @@ function Navigation() {
             <Link href="/">
                 <a>Home</a>
             </Link>    
-            <Link href="/about">
+            <Link href="/About">
                 <a>About</a>
             </Link>
-            <Link href="/contact">
+            <Link href="/Contact">
                 <a>Contact</a>
             </Link>                
           </Nav>
