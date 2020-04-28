@@ -1,7 +1,7 @@
 import { Navbar, Nav } from "react-bootstrap";
 import Link from "next/link";
-import { FaHome } from "react-icons/Fa";
-import { MdAccountBox, MdEmail } from "react-icons/Md";
+import { FaHome } from "react-icons/fa";
+import { MdAccountBox, MdEmail } from "react-icons/md";
 
 function Navigation() {
   return (
