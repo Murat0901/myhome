@@ -1,7 +1,6 @@
 import { Navbar, Nav } from "react-bootstrap";
 import Link from "next/link";
-import { FaHome } from "react-icons/fa";
-import { MdAccountBox, MdEmail } from "react-icons/md";
+import { MdAccountBox, MdEmail, MdHome } from "react-icons/md";
 
 function Navigation() {
   return (
@@ -14,7 +13,7 @@ function Navigation() {
             <Nav className="ml-auto">
               <Link href="/">
                 <a>
-                  <FaHome className="home-icon" />
+                  <MdHome className="home-icon" />
                   Home
                 </a>
               </Link>
