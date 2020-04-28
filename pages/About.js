@@ -2,13 +2,13 @@ import Layout from "../components/Layout";
 
 function About() {
   return (
-    <Layout>
-      <section id="about" className="about">
-        <div className="">
-          <h1>About Me</h1>
-        </div>
-      </section>
-    </Layout>
+      <div>
+        <Layout>
+          <section id="about">
+            <p>About Me</p>
+          </section>
+        </Layout>
+      </div>
   );
 }
 
