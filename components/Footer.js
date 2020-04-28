@@ -1,4 +1,5 @@
-import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
+import {GoMarkGithub} from "react-icons/go"
+import {TiSocialTwitter ,TiSocialLinkedin} from "react-icons/ti"
 import Link from "next/link";
 
 function Footer() {
@@ -9,21 +10,21 @@ function Footer() {
         <li>
           <Link href="https://github.com/Murat0901">
             <a>
-              <FaGithub size={size} />
+              <GoMarkGithub size={size} />
             </a>
           </Link>
         </li>
         <li>
           <Link href="https://twitter.com/menzilcim">
             <a>
-              <FaTwitter size={size} />
+              <TiSocialTwitter size={size} />
             </a>
           </Link>
         </li>
         <li>
           <Link href="https://www.linkedin.com/in/murat-menzilci-223823a8">
             <a>
-              <FaLinkedin size={size} />
+              <TiSocialLinkedin size={size} />
             </a>
           </Link>
         </li>
