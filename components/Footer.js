@@ -1,11 +1,11 @@
-import {GoMarkGithub} from "react-icons/go"
-import {TiSocialTwitter ,TiSocialLinkedin} from "react-icons/ti"
+import { GoMarkGithub } from "react-icons/go";
+import { TiSocialTwitter, TiSocialLinkedin } from "react-icons/ti";
 import Link from "next/link";
 
 function Footer() {
   const size = 30;
   return (
-    <div className="footer">
+    <footer>
       <ul>
         <li>
           <Link href="https://github.com/Murat0901">
@@ -30,7 +30,7 @@ function Footer() {
         </li>
       </ul>
       <p>Design by Murat Menzilci with Next.js</p>
-    </div>
+    </footer>
   );
 }
 

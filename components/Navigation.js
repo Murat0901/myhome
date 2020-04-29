@@ -5,26 +5,26 @@ import { MdAccountBox, MdEmail, MdHome } from "react-icons/md";
 function Navigation() {
   return (
     <div>
-      <Navbar bg="light" expand="lg" className="my-navbar" >
+      <Navbar bg="light" expand="lg" className="my-navbar">
         <div className="container">
           <Navbar.Brand>Murat Menzilci</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
               <Link href="/">
-                <a>
+                <a className="hover-link">
                   <MdHome className="home-icon" />
                   Home
                 </a>
               </Link>
               <Link href="/About">
-                <a>
+                <a className="hover-link">
                   <MdAccountBox className="home-icon" />
                   About
                 </a>
               </Link>
               <Link href="/Contact">
-                <a>
+                <a className="hover-link">
                   <MdEmail className="home-icon" />
                   Contact
                 </a>

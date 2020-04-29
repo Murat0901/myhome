@@ -5,7 +5,11 @@ function About() {
       <div>
         <Layout>
           <section id="about">
-            <p>About Me</p>
+            <div className="container">
+              <h1>About Me</h1>
+              <p>Hey, My Name is Murat. I love developing and creating new things.</p>
+              <p>I'll edit this later...</p>
+            </div>
           </section>
         </Layout>
       </div>
