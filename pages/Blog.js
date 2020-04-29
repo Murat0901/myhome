@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 function Blog({ blogs }) {
   return (
     <Layout>
-      <div className="blog">
+      <section id="blog">
         <div className="container">
           <h1>Kişisel Notlarım</h1>
           <ul>
@@ -19,7 +19,7 @@ function Blog({ blogs }) {
             ))}
           </ul>
         </div>
-      </div>
+      </section>
     </Layout>
   );
 }

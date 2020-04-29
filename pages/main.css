@@ -93,7 +93,7 @@ section{
 
 section{
     margin: 2rem 0;
-    height: 100vh;
+    min-height: calc(100vh - 150px - 58px);
 }
 
 #about{
@@ -126,7 +126,8 @@ section{
 }
 
 footer{
-    position: relative;
+    position: absolute;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background: black;
@@ -151,6 +152,11 @@ footer li{
 .bg-blue{
     color:white;
     color:var(--primary-color) !important;
+}
+
+#blog{
+    display: grid;
+    grid-template-columns: 30 30 30;
 }
 
 @media(max-width:920px){
