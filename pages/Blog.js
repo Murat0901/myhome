@@ -1,7 +1,9 @@
 import unfetch from "isomorphic-unfetch";
+import Layout from "../components/Layout";
 
 function Blog({ blogs }) {
   return (
+    <Layout>
       <div className="blog">
         <div className="container">
           <h1>Kişisel Notlarım</h1>
@@ -18,7 +20,7 @@ function Blog({ blogs }) {
           </ul>
         </div>
       </div>
-
+    </Layout>
   );
 }
 
