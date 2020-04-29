@@ -16,6 +16,7 @@ body{
     font-family: 'Lora', serif;
     line-height: 1.6rem;
     font-size: 1.2rem;
+    background-color:  #f0f5f5;
 }
 
 section{
@@ -157,6 +158,10 @@ footer li{
         font-size: 0.9em;
         padding:10px;
         transition: .5s;/*Kucuk ekranda yavasca padding kuculecek*/
+    }
+    /*Mobilde alt cizgiler gorunmesin*/
+    .my-navbar .hover-link:hover::after {
+        width: 0;
     }
 
     footer p{
