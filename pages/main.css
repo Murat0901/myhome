@@ -154,9 +154,9 @@ footer li{
     color:var(--primary-color) !important;
 }
 
-#blog{
-    display: grid;
-    grid-template-columns: 30 30 30;
+article .card{
+    margin-top:30px !important;
+    width: 100%;
 }
 
 @media(max-width:920px){

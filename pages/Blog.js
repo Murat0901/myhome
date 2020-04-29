@@ -10,10 +10,12 @@ function Blog({ blogs }) {
           <ul>
             {blogs.map((blog) => (
               <article>
-                <div className="blog-post">
-                  <h2 className="blog-title">{blog.title}</h2>
-                  <p>{blog.content}</p>
-                  <p>{blog.dateTime}</p>
+                <div className="card bg-light">
+                  <div className="card-body">
+                    <h5 className="card-header">{blog.title}</h5>
+                    <p className="card-text">{blog.content}</p>
+                    <p>{blog.dateTime}</p>
+                  </div>
                 </div>
               </article>
             ))}
