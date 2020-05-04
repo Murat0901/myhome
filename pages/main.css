@@ -197,3 +197,19 @@ article .card:hover{
         transition: .5s; /*Kucuk ekranda yavasca padding kuculecek*/
     }
 }
+
+
+@media(max-width:640px){
+    #contact ul{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        transition: .3s;
+    }
+
+    .box{
+        margin-top: 1em;
+        justify-self: center;
+        max-width: 150px;
+    }
+}
