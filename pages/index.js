@@ -14,6 +14,8 @@ export default function Home() {
                 My Blog
               </a>
             </Link>
+
+            <p>Bu site Next.js ile oluşturulmuştur ve blog yazılarım Django'da oluşturduğum API'dan gelmektedir.</p>
           </div>
         </section>
       </Layout>
