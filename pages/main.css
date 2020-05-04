@@ -212,4 +212,8 @@ article .card:hover{
         justify-self: center;
         max-width: 150px;
     }
+
+    #about .container{
+        width: 80%;
+    }
 }
