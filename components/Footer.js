@@ -5,8 +5,8 @@ import Link from "next/link";
 function Footer() {
   const size = 30;
   return (
-    <footer>
-      <ul>
+    <div className="footer">
+            <ul>
         <li>
           <Link href="https://github.com/Murat0901">
             <a>
@@ -30,7 +30,7 @@ function Footer() {
         </li>
       </ul>
       <p>Design by Murat Menzilci with Next.js</p>
-    </footer>
+    </div>
   );
 }
 
