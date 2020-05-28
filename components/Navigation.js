@@ -5,7 +5,7 @@ import { MdAccountBox, MdEmail, MdHome } from "react-icons/md";
 function Navigation() {
   return (
     <div>
-      <Navbar bg="light" expand="lg" className="my-navbar">
+      <Navbar sticky="top" bg="light" expand="lg" className="my-navbar">
         <div className="container">
           <Navbar.Brand>Murat Menzilci</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

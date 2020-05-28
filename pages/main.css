@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 :root{
     --primary-color:#007bff;
@@ -13,47 +13,48 @@
 }
 
 body{
-    font-family: 'Lora', serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6rem;
     font-size: 1.2rem;
-    background-color:  #f0f5f5;
+    background-color: #ffe818;
 }
 
 section{
-    padding-top: 80px;
+    display: flex;
+    align-items: center;
 }
 
 .my-navbar{
     padding: 0.5rem 0 0.5rem 0;
-    background-color:rgba(24, 24, 24, 0.9) !important;
+    background: transparent;
     position: fixed;
     top:0;
     z-index: 1;
     width: 100%;
 }
 
+.bg-light{
+    background-color: black !important;
+}
+
 .my-navbar .navbar-brand{
-    color:var(--primary-color);
+    color: #ffe818;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.my-navbar .navbar-brand:hover{
-    color:var(--primary-color);
+.navbar-brand:hover{
+    color: #ffe818 !important;
 }
 
 .my-navbar .navbar-toggler-icon{
-    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 232, 24)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .my-navbar a{   
+    color: #ffe818;
     padding:15px;
     text-decoration: none;
-}
-
-.my-navbar a:hover{
-    color:var(--hover-color);
-    transition: .4s;
 }
 
 .my-navbar .hover-link::after{
@@ -61,7 +62,7 @@ section{
     display: block;
     width: 0;
     height: 2px;
-    background:var(--hover-color) !important;
+    background:#ffe818 !important;
     transition: width .3s;
 }
 
@@ -71,9 +72,8 @@ section{
 
 
 #home{
-    margin: 2rem 0;
     display: grid;
-    grid-template-rows: 3fr minmax(100px, 350px) max-content 1fr;
+    align-items: center;
     line-height: 2em;
 }
 
@@ -86,20 +86,33 @@ section{
     margin:0 10px 3px 0;
 }
 
+#home .tecs{
+    margin-top: 5em;
+    padding: 2em;
+    border:1px solid gray;
+    border-radius: 10px;
+}
+
+#home .icons{
+    margin:3em 1em;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+
+}
+
 .container{
     text-align: center;
 }
 
 section{
-    margin: 2rem 0;
-    min-height: calc(100vh - 150px - 58px);
+    height: 100vh
 }
 
 #about{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 120px);
 }
 
 #about .container{
@@ -125,25 +138,34 @@ section{
 }
 
 #contact ul a{
+    color:black;
     text-decoration: none;
 }
 
 #contact .box{
     border:1px solid;
     padding: 2em;
-    background-color: #CDD7D6;
     border-radius: 0.9em;
 }
 
-#contact .box:hover{
-    background-color: #cddddd;
+#contact .git:hover{
+    background-color: #ffbc4b;
 }
 
+#contact .twt:hover{
+    background-color: #3e8ef1;
+}
+
+#contact .linkd:hover{
+    background-color:#ffd0d5;
+}
+
+
+
 footer{
-    position: absolute;
+    position: relative;
+    bottom: 0 !;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
     background: black;
     color:white;
     text-align: center;
@@ -165,7 +187,7 @@ footer li{
 
 .bg-blue{
     color:white;
-    color:var(--primary-color) !important;
+    color:#3e8ef1 !important;
 }
 
 article .card{
@@ -210,7 +232,7 @@ article .card:hover{
     .box{
         margin-top: 1em;
         justify-self: center;
-        max-width: 150px;
+        width: 100%;
     }
 
     #about .container{

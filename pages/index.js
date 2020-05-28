@@ -1,7 +1,14 @@
 import Layout from "../components/Layout";
-import Link from "next/link";
+import {
+  DiDjango,
+  DiReact,
+  DiBootstrap,
+  DiSass,
+  DiJavascript1,
+} from "react-icons/di";
 
 export default function Home() {
+  const size = 50;
   return (
     <div>
       <Layout>
@@ -9,13 +16,28 @@ export default function Home() {
           <div className="container">
             <img src="https://avatars2.githubusercontent.com/u/47676205?s=460&u=3db26078eadd62852afdf3f952b04d238796761d&v=4"></img>
             <h1>Kişisel Websiteme Hoş Geldiniz</h1>
-            <Link href="/Blog">
-              <a className="button">
-                My Blog
-              </a>
-            </Link>
-
-            <p>Bu site Next.js ile oluşturulmuştur ve blog yazılarım Django'da oluşturduğum API'dan gelmektedir.</p>
+            <p>Bu site Next.js ile oluşturulmuştur.</p>
+            <p>Fullstack geliştirici olarak Freelance çalışıyorum</p>
+            <div className="tecs">
+              <h3>Kullandığım Teknolojiler</h3>
+              <ul className="icons">
+                <li>
+                  <DiDjango size={size} />
+                </li>
+                <li>
+                  <DiReact size={size} />
+                </li>
+                <li>
+                  <DiBootstrap size={size} />
+                </li>
+                <li>
+                  <DiSass size={size} />
+                </li>
+                <li>
+                  <DiJavascript1 size={size} />
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
       </Layout>
