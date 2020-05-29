@@ -8,7 +8,6 @@ import {
 } from "react-icons/di";
 
 export default function Home() {
-  const size = 50;
   return (
     <div>
       <Layout>
@@ -22,19 +21,19 @@ export default function Home() {
               <h3>Kullandığım Teknolojiler</h3>
               <ul className="icons">
                 <li>
-                  <DiDjango size={size} />
+                  <DiDjango />
                 </li>
                 <li>
-                  <DiReact size={size} />
+                  <DiReact />
                 </li>
                 <li>
-                  <DiBootstrap size={size} />
+                  <DiBootstrap />
                 </li>
                 <li>
-                  <DiSass size={size} />
+                  <DiSass />
                 </li>
                 <li>
-                  <DiJavascript1 size={size} />
+                  <DiJavascript1 />
                 </li>
               </ul>
             </div>

@@ -9,30 +9,30 @@ function Contact() {
     <Layout>
       <section id="contact">
         <div className="container">
-          <h1>Contact Me</h1>
-          <p>My social media accounts</p>
+          <h1 className="m-3">Contact Me</h1>
+          <p className="m-5">My social media accounts</p>
           <ul>
-            <li className="box git">
-              <Link href="https://github.com/Murat0901">
-                <a>
+            <Link href="https://github.com/Murat0901">
+              <a>
+                <li className="box git">
                   <GoMarkGithub size={size} /> Github
-                </a>
-              </Link>
-            </li>
-            <li className="box twt">
-              <Link href="https://twitter.com/menzilcim">
-                <a>
+                </li>
+              </a>
+            </Link>
+            <Link href="https://twitter.com/menzilcim">
+              <a>
+                <li className="box twt">
                   <TiSocialTwitter size={size} /> Twitter
-                </a>
-              </Link>
-            </li>
-            <li className="box linkd">
-              <Link href="https://www.linkedin.com/in/murat-menzilci-223823a8">
-                <a>
+                </li>
+              </a>
+            </Link>
+            <Link href="https://www.linkedin.com/in/murat-menzilci-223823a8">
+              <a>
+                <li className="box linkd">
                   <TiSocialLinkedin size={size} /> Linkedin
-                </a>
-              </Link>
-            </li>
+                </li>
+              </a>
+            </Link>
           </ul>
         </div>
       </section>
