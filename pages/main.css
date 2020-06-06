@@ -240,6 +240,10 @@ article .card:hover {
   }
 }
 @media (max-width: 640px) {
+  #home .my-link:hover::after {
+    width: 0;
+  }
+
   #contact ul {
     display: flex;
     flex-direction: column;
