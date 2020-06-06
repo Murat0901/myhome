@@ -11,6 +11,10 @@
     scroll-behavior: smooth;
 }
 
+#__next-prerender-indicator {
+    display: none;
+  }
+
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6rem;
@@ -18,18 +22,11 @@ body {
     background-color: #ffe818;
 }
 
-section {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
 .my-navbar {
     padding: 0.5rem 0 0.5rem 0;
     background: transparent;
     position: fixed;
     top: 0;
-    z-index: 1;
     width: 100%;
 }
 
@@ -71,20 +68,18 @@ section {
 }
 
 #home {
-    display: grid;
-    padding-top: 5em;
+    padding-top: 170px;
     justify-content: center;
     align-items: center;
     line-height: 2em;
 }
 
-#home img {
-    border-radius: 50%;
-    width: 250px;
-}
-
 .home-icon {
     margin: 0 10px 3px 0;
+}
+
+#home img{
+    border-radius: 0.9em;
 }
 
 #home .tecs {
@@ -126,11 +121,34 @@ section {
     color: red;
 }
 
+#home .works{
+    background-color: black;
+    color:#ffe818;
+    font-size: 0.9em;
+}
+
+#home .works h3{
+   padding: 2em;
+}
+
+#home .works h4{
+    color: #cf5050;
+    padding: 2em;
+}
+
+#home .works p{
+    color: #fff;
+    padding: 10px;
+    font-size: 1em;
+}
+
+
 .container {
     text-align: center;
 }
 
 #about {
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,13 +166,13 @@ section {
     box-shadow: 0px 0px 30px 0px #79839494;
 }
 
-#about h1,
-h4 {
+#about h1,h4 {
     margin: 15px;
     color: #cf5050;
 }
 
 #contact {
+    height: 100vh;
     background-color: black;
 }
 
