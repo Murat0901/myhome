@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap')
+
+$primary-color: #007bff 
+
+* 
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    scroll-behavior: smooth
+#__next-prerender-indicator 
+    display: none
+body 
+    font-family: 'Poppins', sans-serif
+    line-height: 1.6rem
+    font-size: 1.2rem
+    background-color: #ffe818
+.my-navbar 
+    padding: 0.5rem 0 0.5rem 0
+    background: transparent
+    position: fixed
+    top: 0
+    width: 100%
+    .navbar-brand 
+        color: #ffe818
+        font-weight: bold
+        text-transform: uppercase
+    .navbar-toggler-icon 
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 232, 24)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+    a 
+        color: #ffe818
+        padding: 15px
+        text-decoration: none
+    .hover-link 
+        &::after 
+            content: ''
+            display: block
+            width: 0
+            height: 2px
+            background: #ffe818 !important
+            transition: width .3s
+        &:hover 
+            &::after 
+                width: 100%
+
+.bg-light 
+    background-color: black !important
+.navbar-brand 
+    font-size: 0.9em
+    padding: 10px
+    transition: .5s
+    &:hover 
+        color: #ffe818 !important
+#home
+    .top 
+        padding-top: 5em
+        height: 100vh
+        justify-content: center
+        align-items: center
+        line-height: 2em
+    img 
+        border-radius: 0.9em
+    .tecs 
+        margin: 5em 0
+        padding: 2em
+        border: 1px solid gray
+        border-radius: 10px
+        &:hover 
+            box-shadow: 0px 0px 30px 0px #79839494
+    .icons 
+        display: flex
+        font-size: 4em
+        padding: 1em 0
+        list-style: none
+        justify-content: space-between
+        font-size: 4em
+        padding: 0
+    ul 
+        li 
+            &:nth-child(1):hover 
+                color: #cf5050
+            &:nth-child(2):hover 
+                color: $primary-color
+            &:nth-child(3):hover 
+                color: #ffbc4b
+            &:nth-child(4):hover 
+                color: #a4c9d8
+            &:nth-child(5):hover 
+                color: red
+    .works 
+        background-color: black
+        color: #ffe818
+        font-size: 0.9em
+        h3 
+            padding: 2em
+        h4 
+            color: #cf5050
+            padding: 2em
+        p 
+            color: #fff
+            padding: 10px
+            font-size: 1em
+.home-icon 
+    margin: 0 10px 3px 0
+.container 
+    text-align: center
+#about 
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    .container 
+        background-color: #343a40
+        border-radius: 0.9em
+        color: #fff
+        padding: 3em 1em
+        width: 60%
+        width: 80%
+        &:hover 
+            box-shadow: 0px 0px 30px 0px #79839494
+#about h1,
+h4 
+    margin: 15px
+    color: #cf5050
+#contact 
+    height: 100vh
+    background-color: black
+    .container 
+        color: #fff
+    ul 
+        display: grid
+        grid-template-columns: 30% 30% 30%
+        column-gap: 1.5em
+        list-style: none
+        justify-content: center
+        align-items: center
+        a 
+            color: #fff
+            text-decoration: none
+            &:hover 
+                color: black
+    .box 
+        border: 1px solid
+        padding: 2em
+        border-radius: 0.9em
+        &:hover 
+            box-shadow: 0px 0px 30px 0px #79839494
+    .git 
+        &:hover 
+            background-color: #ffbc4b
+    .twt 
+        &:hover 
+            background-color: #3e8ef1
+    .linkd 
+        &:hover 
+            background-color: #ffd0d5
+.footer 
+    position: absolute
+    bottom: 0
+    width: 100%
+    background: black
+    color: white
+    text-align: center
+    padding: 2rem
+    ul 
+        display: flex
+        justify-self: flex-end
+        align-items: center
+        justify-content: center
+        text-decoration: none
+        list-style: none
+    li 
+        padding: 0 30px 0 30px
+.bg-blue 
+    color: white
+    color: #3e8ef1 !important
+article 
+    .card 
+        margin-top: 30px !important
+        width: 100%
+        &:hover 
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2)
+@media(max-width:920px) 
+    #home
+        .top
+            padding-top: 1em
+        .tecs 
+            ul
+                display: flex
+                flex-direction: column
+                align-items: center
+
+@media(max-width:640px) 
+    #contact
+        ul
+            display: flex
+            flex-direction: column
+            justify-self: center
+            transition: .3s
+        .box 
+            margin-top: 1em
+            justify-self: center
+            width: 100%
